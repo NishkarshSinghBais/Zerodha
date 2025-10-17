@@ -14,8 +14,10 @@ module.exports.Signup = async (req, res, next) => {
     const user = await User.create({ email, password, username, createdAt });
     const token = createSecretToken(user._id);
     res.cookie("token", token, {
-      withCredentials: true,
-      httpOnly: false,
+      httpOnly: true, // secure from JS access
+      secure: true, // required for HTTPS (Render uses HTTPS)
+      sameSite: "None", // required for cross-origin cookie sharing
+      maxAge: 24 * 60 * 60 * 1000, // optional: 1 day
     });
     res
       .status(201)
@@ -44,8 +46,10 @@ module.exports.Login = async (req, res, next) => {
     }
     const token = createSecretToken(user._id);
     res.cookie("token", token, {
-      withCredentials: true,
-      httpOnly: false,
+      httpOnly: true, // secure from JS access
+      secure: true, // required for HTTPS (Render uses HTTPS)
+      sameSite: "None", // required for cross-origin cookie sharing
+      maxAge: 24 * 60 * 60 * 1000, // optional: 1 day
     });
     res
       .status(201)
