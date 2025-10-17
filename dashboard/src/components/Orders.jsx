@@ -9,7 +9,7 @@ const Orders = () => {
 
   useEffect(() => {
     axios
-      .get(`$(backendUrl)/allOrders`, { withCredentials: true })
+      .get(`${backendUrl}/allOrders`, { withCredentials: true })
       .then((res) => {
         console.log(res.data);
         setAllOrders(res.data);

@@ -18,7 +18,7 @@ const SellActionWindow = ({ uid }) => {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        `$(backendUrl)/trade/sell`,
+        `${backendUrl}/trade/sell`,
         {
           name: uid,
           qty: stockQuantity,

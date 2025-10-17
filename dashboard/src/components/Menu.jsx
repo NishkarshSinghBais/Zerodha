@@ -95,7 +95,7 @@ const Menu = () => {
         <hr />
         <div
           className="profile"
-          onClick={() => (window.location.href = `$(frontendUrl)`)}
+          onClick={() => (window.location.href = `${frontendUrl}`)}
           style={{ cursor: "pointer" }}
         >
           <div className="avatar"></div>

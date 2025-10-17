@@ -45,7 +45,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = `$(dashboardUrl)`;
+          window.location.href = `${dashboardUrl}`;
         }, 1000);
       } else {
         handleError(message);

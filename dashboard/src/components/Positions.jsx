@@ -10,7 +10,7 @@ const Positions = () => {
 
   useEffect(() => {
     axios
-      .get(`$(backendUrl)/allPositions`, { withCredentials: true })
+      .get(`${backendUrl}/allPositions`, { withCredentials: true })
       .then((res) => {
         console.log(res.data);
         setAllPositions(res.data);
