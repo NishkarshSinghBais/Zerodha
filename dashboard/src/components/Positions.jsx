@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 
-const backendUrl = process.env.REACT_APP_API_URL;
+const backendUrl = import.meta.env.VITE_API_URL;
 
 const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);

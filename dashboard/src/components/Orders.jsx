@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const backendUrl = process.env.REACT_APP_API_URL;
+const backendUrl = import.meta.env.VITE_API_URL;
 
 const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);

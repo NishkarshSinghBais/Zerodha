@@ -2,7 +2,7 @@ import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const frontendUrl = process.env.REACT_APP_FRONTEND_URL;
+const frontendUrl = import.meta.env.VITE_FRONTEND_URL;
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);

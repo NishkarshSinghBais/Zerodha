@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
-const backendUrl = process.env.REACT_APP_API_URL;
+const backendUrl = import.meta.env.VITE_API_URL;
 
 const Signup = () => {
   const navigate = useNavigate();

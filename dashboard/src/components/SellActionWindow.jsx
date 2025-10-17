@@ -3,7 +3,7 @@ import axios from "axios";
 import GeneralContext from "./GeneralContext";
 import "./BuyActionWindow.css";
 
-const backendUrl = process.env.REACT_APP_API_URL;
+const backendUrl = import.meta.env.VITE_API_URL;
 
 const SellActionWindow = ({ uid }) => {
   const { closeSellWindow } = useContext(GeneralContext);
