@@ -4,6 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 const backendUrl = process.env.REACT_APP_API_URL;
+const dashboardUrl = process.env.REACT_APP_DASHBOARD_URL;
 
 const Login = () => {
   const navigate = useNavigate();
@@ -44,7 +45,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:5174";
+          window.location.href = `$(dashboardUrl)`;
         }, 1000);
       } else {
         handleError(message);

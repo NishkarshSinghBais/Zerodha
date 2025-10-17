@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+const frontendUrl = process.env.REACT_APP_FRONTEND_URL;
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleLogout = () => {
-    navigate("/login");
-  };
+  // const handleLogout = () => {
+  //   navigate("/login");
+  // };
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
@@ -93,7 +95,7 @@ const Menu = () => {
         <hr />
         <div
           className="profile"
-          onClick={() => (window.location.href = "http://localhost:5173")}
+          onClick={() => (window.location.href = `$(frontendUrl)`)}
           style={{ cursor: "pointer" }}
         >
           <div className="avatar"></div>

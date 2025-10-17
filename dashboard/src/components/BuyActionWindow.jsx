@@ -3,6 +3,8 @@ import axios from "axios";
 import GeneralContext from "./GeneralContext";
 import "./BuyActionWindow.css";
 
+const backendUrl = process.env.REACT_APP_API_URL;
+
 const BuyActionWindow = ({ uid }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
 
@@ -15,7 +17,7 @@ const BuyActionWindow = ({ uid }) => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:3002/trade/buy",
+        `${backendUrl}trade/buy`,
         {
           name: uid,
           qty: stockQuantity,
