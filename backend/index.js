@@ -18,7 +18,11 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:5174",
+  "https://zerodha-1-djkk.onrender.com",
+];
 
 app.use(
   cors({
