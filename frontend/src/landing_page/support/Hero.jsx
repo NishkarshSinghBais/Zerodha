@@ -32,10 +32,14 @@ function Hero() {
           <h1>Featured</h1>
           <ol>
             <li>
-              <a href="">Current takeovers and delisting - January 2026</a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                Current takeovers and delisting - January 2026
+              </a>
             </li>
             <li>
-              <a href="">Latest intraday leverages</a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                Latest intraday leverages
+              </a>
             </li>
           </ol>
         </div>
