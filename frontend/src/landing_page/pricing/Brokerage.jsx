@@ -134,14 +134,22 @@ function Brokerage() {
           <p>
             For BSDA demat account: Zero charges if the holding value is less
             than ₹4,00,000. To learn more about BSDA,{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Click here
             </a>
           </p>
           <p>
             For non-BSDA demat accounts: ₹300/year + 18% GST charged quarterly
             (90 days). To learn more about AMC,{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Click here
             </a>
           </p>
@@ -168,7 +176,11 @@ function Brokerage() {
           <p>
             Interest is levied at 18% a year or 0.05% per day on the debit
             balance in your trading account.{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Learn more.
             </a>
           </p>

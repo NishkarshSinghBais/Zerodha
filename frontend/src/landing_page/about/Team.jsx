@@ -34,15 +34,27 @@ function Team() {
 
           <p>
             Connect on{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Homepage
             </a>{" "}
             /{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               TradingQ&A
             </a>{" "}
             /{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Twitter
             </a>
           </p>

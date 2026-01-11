@@ -3,7 +3,11 @@ function Hero() {
     <section className="container-fluid" id="supportHero">
       <div className="p-5 mt-5" id="supportWrapper">
         <h4>Search Portal</h4>
-        <a href="" style={{ textDecoration: "none" }}>
+        <a
+          href="#"
+          style={{ textDecoration: "none" }}
+          onClick={(e) => e.preventDefault()}
+        >
           Track Ticket
         </a>
       </div>
@@ -13,9 +17,16 @@ function Hero() {
           <h1>Search for an answer or browse help topics to create a ticket</h1>
           <input placeholder="Eg. how do I activate F&O" />
           <br />
-          <a href="">Track account opening</a>{" "}
-          <a href="">Track segment activation</a>{" "}
-          <a href="">Intraday margins</a> <a href="">Kite user manual</a>
+          <a href="#" onClick={(e) => e.preventDefault()}>
+            Track account opening
+          </a>{" "}
+          <a href="#" onClick={(e) => e.preventDefault()}>
+            Track segment activation
+          </a>{" "}
+          <a href="#" onClick={(e) => e.preventDefault()}>
+            Intraday margins
+          </a>{" "}
+          <a href="">Kite user manual</a>
         </div>
         <div className="col-6 p-5 mt-5 mb-5">
           <h1>Featured</h1>

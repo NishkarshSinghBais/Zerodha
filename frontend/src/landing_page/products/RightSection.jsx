@@ -11,7 +11,13 @@ function RightSection({
           <h1>{productName}</h1>
           <p>{productDescription}</p>
           <div>
-            <a href={learnMore} style={{textDecoration: "none"}}>Learn More</a>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
+              Learn More
+            </a>
           </div>
         </div>
         <div className="col-6">

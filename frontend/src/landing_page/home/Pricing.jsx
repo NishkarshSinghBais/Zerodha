@@ -8,7 +8,11 @@ function Pricing() {
             We pioneered the concept of discount broking and price transparency
             in India. flat fees and no hidden charges.
           </p>
-          <a href="" style={{ textDecoration: "none" }}>
+          <a
+            href="#"
+            style={{ textDecoration: "none" }}
+            onClick={(e) => e.preventDefault()}
+          >
             See pricing{" "}
             <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>

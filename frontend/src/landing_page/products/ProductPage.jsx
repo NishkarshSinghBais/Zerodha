@@ -48,7 +48,11 @@ function ProductPage() {
       />
       <p className="fs-4 text-center mt-5">
         Want to know more about our technology stack? Check out the{" "}
-        <a href="" style={{ textDecoration: "none" }}>
+        <a
+          href="#"
+          style={{ textDecoration: "none" }}
+          onClick={(e) => e.preventDefault()}
+        >
           Zerodha.tech
         </a>{" "}
         blog.

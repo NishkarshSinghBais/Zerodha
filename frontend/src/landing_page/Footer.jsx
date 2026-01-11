@@ -15,43 +15,75 @@ function Footer() {
           </div>
           <div className="col footer-links">
             <p>Comapny</p>
-            <a href="">About</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              About
+            </a>
             <br />
-            <a href="">Product</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Product
+            </a>
             <br />
-            <a href="">Pricing</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Pricing
+            </a>
             <br />
-            <a href="">Referral Programme</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Referral Programme
+            </a>
             <br />
-            <a href="">Careers</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Careers
+            </a>
             <br />
-            <a href="">Zerodha.tech</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Zerodha.tech
+            </a>
             <br />
-            <a href="">Press and Meadia</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Press and Meadia
+            </a>
             <br />
-            <a href="">Zerodha cares (CSR)</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Zerodha cares (CSR)
+            </a>
             <br />
           </div>
           <div className="col footer-links">
             <p>Support</p>
-            <a href="">Contact</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Contact
+            </a>
             <br />
-            <a href="">Support portal</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Support portal
+            </a>
             <br />
-            <a href="">Z-connect blog</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Z-connect blog
+            </a>
             <br />
-            <a href="">List of charges</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              List of charges
+            </a>
             <br />
-            <a href="">Download and resources</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Download and resources
+            </a>
             <br />
           </div>
           <div className="col footer-links">
             <p>Account</p>
-            <a href="">Open an account</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Open an account
+            </a>
             <br />
-            <a href="">Fund transfer</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Fund transfer
+            </a>
             <br />
-            <a href="">60 day challenge</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              60 day challenge
+            </a>
             <br />
           </div>
         </div>

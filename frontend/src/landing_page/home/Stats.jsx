@@ -37,11 +37,20 @@ function Stats() {
             style={{ width: "90%" }}
           />
           <div className="text-center">
-            <a href="" className="mx-5" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              className="mx-5"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Explore our products{" "}
               <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Try Kite demo{" "}
               <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>

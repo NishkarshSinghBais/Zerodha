@@ -10,27 +10,51 @@ function CreateTicket() {
             <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
           </h4>
           <div className="mt-4">
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Online Account Opening
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Offline Account Opening
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Company, Partenership and HUF Account Opening
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               NRI Account Opening
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Charges at Zerodha
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Getting Started
             </a>
             <br />
@@ -43,23 +67,43 @@ function CreateTicket() {
             Your Zerodha Account
           </h4>
           <div className="mt-4">
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Login Credentials
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Account Modification and Segment Addition
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               DP, ID and Bank Details
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Your Profile
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Transfer and Conversion of Shares
             </a>
             <br />
@@ -72,31 +116,59 @@ function CreateTicket() {
             Your Zerodha Account
           </h4>
           <div className="mt-4">
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Margin Leverage, Product and Order Types
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Kite Web and Mobile
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Trading FAQs
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Corporate Actions
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Kite API
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Pi and Othwer Platforms
             </a>
             <br />
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none", lineHeight: "2.5" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Stockreports+
             </a>
             <br />

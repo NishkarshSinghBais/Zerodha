@@ -17,17 +17,30 @@ function LeftSection({
           <h1>{productName}</h1>
           <p>{productDescription}</p>
           <div>
-            <a href={tryDemo} style={{textDecoration: "none"}}>Try Demo</a>
-            <a href={learnMore} style={{ marginLeft: "45px", textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
+              Try Demo
+            </a>
+            <a
+              href="#"
+              style={{ marginLeft: "45px", textDecoration: "none" }}
+              onClick={(e) => e.preventDefault()}
+            >
               Learn More
             </a>
           </div>
           <div className="mt-3">
-            <a href={googlePlay}>
+            <a href="#" onClick={(e) => e.preventDefault()}>
               <img src="media/images/googlePlayBadge.svg" />
             </a>
-            <a href={appStore}>
-              <img src="media/images/appstoreBadge.svg" style={{marginLeft: "45px"}} />
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              <img
+                src="media/images/appstoreBadge.svg"
+                style={{ marginLeft: "45px" }}
+              />
             </a>
           </div>
         </div>
