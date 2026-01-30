@@ -13,15 +13,30 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: [true, "Your password is required"],
+    required: false,
   },
+  googleId: {
+    type: String,
+    default: null,
+  },
+
+  provider: {
+    type: String,
+    enum: ["local", "google"],
+    default: "local",
+  },
+
   createdAt: {
     type: Date,
     default: new Date(),
   },
 });
 
+
+
 userSchema.pre("save", async function () {
+  if (!this.password) return;
+  if (!this.isModified("password")) return;
   this.password = await bcrypt.hash(this.password, 12);
 });
 

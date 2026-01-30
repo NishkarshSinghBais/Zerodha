@@ -1,7 +1,9 @@
 require("dotenv").config();
+require("./config/passport");
 
 const express = require("express");
 const mongoose = require("mongoose");
+const passport = require("passport");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const authRoute = require("./routes/AuthRoute");
@@ -21,8 +23,8 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://zerodha-1-djkk.onrender.com",
   "https://zerodha-2-tbun.onrender.com",
+  "https://zerodha-1-djkk.onrender.com",
 ];
 
 app.use(
@@ -41,6 +43,7 @@ app.use(
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(passport.initialize());
 app.use("/", authRoute);
 app.use("/trade", buyRoute);
 app.use("/trade", sellRoute);
