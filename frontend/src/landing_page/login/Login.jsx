@@ -38,7 +38,7 @@ const Login = () => {
         {
           ...inputValue,
         },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       console.log(data);
       const { success, message } = data;
@@ -93,6 +93,15 @@ const Login = () => {
         </div>
         <button type="submit" className="btn btn-primary">
           login
+        </button>
+        <button
+          type="button"
+          className="btn btn-danger mt-3 w-100"
+          onClick={() => {
+            window.location.href = "https://zerodha-kjyr.onrender.com/auth/google";
+          }}
+        >
+          Sign in with Google
         </button>
         <span>
           &nbsp; Don't have an account?{" "}
